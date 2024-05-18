@@ -1,0 +1,14 @@
+matplotlib
+plotly
+scikit-learn
+streamlit
+seaborn
+squarify
+import-ipynb
+utils
+squarify
+findspark
+pandas
+scikit-learn
+datetime
+
