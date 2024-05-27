@@ -332,7 +332,7 @@ elif choice == 'Modeling & Evaluation':
     else:
         st.write("No data available. Please upload a file in the 'Data Understanding' section.")
 
-elif choice == 'Predict':
+elif choice == 'Feedback':
     
     if 'model_exported' in st.session_state and st.session_state.model_exported:
         with open('kmeans_model.pkl', 'rb') as f:
@@ -361,7 +361,7 @@ elif choice == 'Predict':
         st.write("Added data:")
         st.dataframe(st.session_state['df_new'])  
 
-        if st.button("Predict"):
+        if st.button("Feedback"):
             recent_date = pd.Timestamp.now().date()  
             df_RFM = st.session_state['df_new'].groupby('Customer_id').agg({
                 'day': lambda x: (recent_date - x.max()).days,  # Recency
