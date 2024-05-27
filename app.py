@@ -14,7 +14,7 @@ import base64
 st.title("Advance Machine Learning Project")
 st.header("Customer Segmentation", divider='rainbow')
 
-menu = ["Business Understanding", "Data Understanding","Data preparation","Modeling & Evaluation","Predict"] # , "BigData: Spark"
+menu = ["Business Understanding", "Data Understanding","Data preparation","Modeling & Evaluation","Feedback"] # , "BigData: Spark"
 choice = st.sidebar.selectbox('Menu', menu)
 
 def load_data(uploaded_file):
